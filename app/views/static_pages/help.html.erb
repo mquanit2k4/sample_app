@@ -1,0 +1,13 @@
+<%= provide(:title, t("titles.help")) %>
+<h1><%= t("static_pages.help.title") %></h1>
+<p>
+  <%= t("static_pages.help.content") %>
+  <%= link_to Settings.help_url do %>
+    <%= t("static_pages.help.link_text") %>
+  <% end %>
+
+  <%= t("static_pages.help.content_additional") %>
+  <%= link_to Settings.book_url do %>
+    <%= t("static_pages.help.book_link_text") %>
+  <% end %>
+</p>

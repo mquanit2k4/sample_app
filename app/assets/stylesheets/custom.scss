@@ -1,0 +1,154 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+/* universal */
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+/* language switcher */
+.language-switcher {
+  padding-top: 15px !important;
+
+  a {
+    color: #ccc;
+    text-decoration: none;
+
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+  .current-locale {
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+/* language switcher dropdown */
+.dropdown {
+  &:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+.dropdown-menu {
+  background-color: #337ab7;
+  border: none;
+  margin-top: 0;
+
+  li a {
+    color: #fff;
+    padding: 8px 20px;
+
+    &:hover {
+      background-color: #23527c;
+      color: #fff;
+    }
+  }
+}
+
+/* contact page styles */
+.contact-info {
+  margin-bottom: 20px;
+
+  h4 {
+    color: #337ab7;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 8px;
+  }
+
+  address {
+    font-style: normal;
+    line-height: 1.6;
+  }
+}
+
+.contact-form {
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-weight: bold;
+    color: #555;
+  }
+
+  .form-control {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+
+    &:focus {
+      border-color: #337ab7;
+      box-shadow: 0 0 0 0.2rem rgba(51, 122, 183, 0.25);
+    }
+  }
+
+  .btn-primary {
+    background-color: #337ab7;
+    border-color: #337ab7;
+
+    &:hover {
+      background-color: #23527c;
+      border-color: #23527c;
+    }
+  }
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+
+    h3 {
+      margin: 0;
+      color: #337ab7;
+    }
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+}
+
+/* header */
+#logo {
+  color: #fff;
+  float: left;
+  font-size: 1.7em;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin-right: 10px;
+  padding-top: 9px;
+  text-transform: uppercase;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}

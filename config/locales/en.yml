@@ -1,33 +1,120 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t "hello"
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t("hello") %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   "true": "foo"
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  # Navigation
+  navigation:
+    home: "Home"
+    help: "Help"
+    contact: "Contact"
+    login: "Log in"
+    logout: "Log out"
+    signup: "Sign up"
+    sample_app: "Sample App"
+
+  # Common
+  common:
+    edit: "Edit"
+    show: "Show"
+    delete: "Delete"
+    confirm: "Are you sure?"
+    back: "Back"
+    submit: "Submit"
+    cancel: "Cancel"
+    save: "Save"
+    create: "Create"
+    update: "Update"
+
+  # Page titles
+  titles:
+    home: "Home"
+    help: "Help"
+    about: "About"
+    contact: "Contact"
+
+  # Microposts
+  microposts:
+    all_microposts: "All Microposts"
+    new_micropost: "New Micropost"
+    create_micropost: "Create Micropost"
+    micropost_detail: "Micropost Detail"
+    by: "By"
+    user: "User"
+    content: "Content"
+    select_user: "Select a user"
+    please_select_user: "Please select a user"
+    content_placeholder: "What's happening?"
+    content_required: "Content is required"
+    max_characters: "Maximum %{count} characters"
+    posted_ago: "Posted %{time} ago"
+    posted_on: "Posted on %{date}"
+    no_microposts: "No microposts yet. Be the first to post!"
+    confirm_delete: "Are you sure you want to delete this micropost?"
+    created_successfully: "Micropost was successfully created."
+    deleted_successfully: "Micropost was successfully deleted."
+
+  # Static Pages
+  static_pages:
+    home:
+      title: "Ruby on Rails Tutorial Sample App"
+      welcome: "Welcome to Sample App"
+      description: "This is the home page for the Ruby on Rails Tutorial sample application."
+    help:
+      title: "Help"
+      content: "Get help on the Ruby on Rails Tutorial at the"
+      link_text: "Rails Tutorial help section"
+      content_additional: "To get help on this sample app, see the"
+      book_link_text: "Ruby on Rails Tutorial book."
+    contact:
+      title: "Contact"
+      heading: "Contact Us"
+      description: "We'd love to hear from you! Get in touch with us for any questions or feedback."
+
+  # Contact Page
+  contact:
+    title: "Contact"
+    heading: "Contact Us"
+    get_in_touch: "Get in Touch"
+    description: "We'd love to hear from you! Get in touch with us for any questions or feedback."
+    info:
+      title: "Contact Information"
+      email: "Email"
+      phone: "Phone"
+      address: "Address"
+    form:
+      title: "Send us a message"
+      name: "Name"
+      name_placeholder: "Enter your name"
+      email: "Email"
+      email_placeholder: "Enter your email"
+      subject: "Subject"
+      subject_placeholder: "Enter subject"
+      message: "Message"
+      message_placeholder: "Enter your message"
+      send: "Send Message"
+
+  # Users
+  users:
+    index:
+      user: "Users"
+      name: "Name"
+      email: "Email"
+      new_user: "New User"
+
+  #locales
+  locales:
+    en: "English"
+    vi: "Tiếng Việt"
+
+  # Validate user
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "Name cannot be blank"
+            email:
+              blank: "Email cannot be blank"
+              taken: "Email has already been taken"
+    attributes:
+      user:
+        name: "Name"
+        email: "Email"

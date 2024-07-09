@@ -1,0 +1,26 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to t("navigation.sample_app"), root_path, id: "logo" %>
+
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to t("navigation.home"), root_path %></li>
+        <li><%= link_to t("navigation.help"), static_pages_help_path %></li>
+        <li><%= link_to t("navigation.contact"), static_pages_contact_path %></li>
+        <li><%= link_to t("navigation.login"), "#" %></li>
+
+        <!-- Language Switcher -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <%= I18n.locale == :vi ? "VI" : "EN" %>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><%= link_to "English", url_for(locale: :en) %></li>
+            <li><%= link_to "Tiếng Việt", url_for(locale: :vi) %></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
