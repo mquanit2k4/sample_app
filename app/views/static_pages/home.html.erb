@@ -1,0 +1,10 @@
+<% provide(:title, t("titles.home")) %>
+<div class="center jumbotron">
+  <h1><%= t("static_pages.home.welcome") %></h1>
+
+  <h2>
+    <%= t("static_pages.home.description") %>
+  </h2>
+
+  <%= link_to t("navigation.signup") + "!", "#", class: "btn btn-lg btn-primary" %>
+</div>

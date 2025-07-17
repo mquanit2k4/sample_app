@@ -1,0 +1,13 @@
+<%= provide(:title, t("titles.help")) %>
+<h1><%= t("static_pages.help.title") %></h1>
+<p>
+  <%= t("static_pages.help.content") %>
+  <%= link_to "http://www.railstutorial.org/help" do %>
+    <%= t("static_pages.help.link_text") %>
+  <% end %>
+
+  To get help on this sample app, see the
+  <%= link_to "http://www.railstutorial.org/book" do %>
+    <em>Ruby on Rails Tutorial</em> book.
+  <% end %>
+</p>

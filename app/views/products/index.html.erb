@@ -1,0 +1,15 @@
+<%= provide(:title, t("products.index.title")) %>
+<p style="color: green"><%= notice %></p>
+
+<h1><%= t("products.index.title") %></h1>
+
+<div id="products">
+  <% @products.each do |product| %>
+    <%= render product %>
+    <p>
+      <%= link_to t("common.show") + " this product", product %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to t("products.index.new_product"), new_product_path, class: "btn btn-primary" %>

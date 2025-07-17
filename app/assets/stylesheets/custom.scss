@@ -1,0 +1,83 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+/* universal */
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+/* header */
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* language switcher */
+.language-switcher {
+  padding-top: 15px !important;
+
+  a {
+    color: #ccc;
+    text-decoration: none;
+
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+  .current-locale {
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+/* language switcher dropdown */
+.dropdown {
+  &:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+.dropdown-menu {
+  background-color: #337ab7;
+  border: none;
+  margin-top: 0;
+
+  li a {
+    color: #fff;
+    padding: 8px 20px;
+
+    &:hover {
+      background-color: #23527c;
+      color: #fff;
+    }
+  }
+}

@@ -30,4 +30,67 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  # Navigation
+  navigation:
+    home: "Home"
+    help: "Help"
+    login: "Log in"
+    logout: "Log out"
+    signup: "Sign up"
+    products: "Products"
+    sample_app: "Sample App"
+
+  # Common
+  common:
+    edit: "Edit"
+    show: "Show"
+    delete: "Delete"
+    confirm: "Are you sure?"
+    back: "Back"
+    submit: "Submit"
+    cancel: "Cancel"
+    save: "Save"
+    create: "Create"
+    update: "Update"
+
+  # Page titles
+  titles:
+    home: "Home"
+    help: "Help"
+    about: "About"
+    contact: "Contact"
+
+  # Products
+  products:
+    index:
+      title: "Products"
+      new_product: "New Product"
+    show:
+      title: "Product Details"
+    new:
+      title: "New Product"
+    edit:
+      title: "Edit Product"
+    form:
+      name: "Name"
+      price: "Price"
+      description: "Description"
+
+  # Static Pages
+  static_pages:
+    home:
+      title: "Ruby on Rails Tutorial Sample App"
+      welcome: "Welcome to Sample App"
+      description: "This is the home page for the Ruby on Rails Tutorial sample application."
+    help:
+      title: "Help"
+      content: "Get help on the Ruby on Rails Tutorial at the"
+      link_text: "Rails Tutorial help section"
+
+  # Users
+  users:
+    index:
+      user: "Users"
+      name: "Name"
+      email: "Email"
+      new_user: "New User"

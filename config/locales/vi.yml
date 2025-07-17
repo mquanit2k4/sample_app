@@ -1,0 +1,66 @@
+vi:
+  # Navigation
+  navigation:
+    home: "Trang chủ"
+    help: "Trợ giúp"
+    login: "Đăng nhập"
+    logout: "Đăng xuất"
+    signup: "Đăng ký"
+    products: "Sản phẩm"
+    sample_app: "Ứng dụng mẫu"
+    
+  # Common
+  common:
+    edit: "Sửa"
+    show: "Xem"
+    delete: "Xóa"
+    confirm: "Bạn có chắc chắn?"
+    back: "Quay lại"
+    submit: "Gửi"
+    cancel: "Hủy"
+    save: "Lưu"
+    create: "Tạo"
+    update: "Cập nhật"
+    
+  # Page titles
+  titles:
+    home: "Trang chủ"
+    help: "Trợ giúp"
+    about: "Về chúng tôi"
+    contact: "Liên hệ"
+    
+  # Products
+  products:
+    index:
+      title: "Sản phẩm"
+      new_product: "Thêm sản phẩm"
+    show:
+      title: "Chi tiết sản phẩm"
+    new:
+      title: "Sản phẩm mới"
+    edit:
+      title: "Sửa sản phẩm"
+    form:
+      name: "Tên"
+      price: "Giá"
+      description: "Mô tả"
+      
+  # Static Pages
+  static_pages:
+    home:
+      title: "Ứng dụng mẫu Ruby on Rails Tutorial"
+      welcome: "Chào mừng đến với ứng dụng mẫu"
+      description: "Đây là trang chủ của ứng dụng mẫu Ruby on Rails Tutorial."
+    help:
+      title: "Trợ giúp"
+      content: "Nhận trợ giúp về Ruby on Rails Tutorial tại"
+      link_text: "phần trợ giúp Rails Tutorial"
+      
+  # Users
+  users:
+    index:
+      user: "Người dùng"
+      name: "Tên"
+      email: "Email"
+      new_user: "Thêm người dùng"
+
