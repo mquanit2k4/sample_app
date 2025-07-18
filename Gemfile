@@ -31,6 +31,8 @@ gem "bootstrap-sass", "3.4.1"
 
 gem "sassc-rails"
 
+gem "bcrypt", "~> 3.1.18"
+
 group :development, :test do
   gem "debug", platforms: %i(mri mingw x64_mingw)
   gem "rubocop", "~> 1.26", require: false

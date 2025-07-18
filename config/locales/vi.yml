@@ -110,11 +110,21 @@ vi:
         user:
           attributes:
             name:
-              blank: "Tên không được để trống"
+              blank: "không được để trống"
+              too_long: "quá dài (tối đa %{count} ký tự)"
             email:
-              blank: "Email không được để trống"
-              taken: "Email đã được sử dụng"
+              blank: "không được để trống"
+              taken: "đã được sử dụng"
+              invalid: "có định dạng không hợp lệ"
+              taken: "đã được sử dụng"
+            birthday:
+              blank: "không được để trống"
+              too_old: "không được quá %{years} năm trước"
+              future_date: "không được trong tương lai"
     attributes:
       user:
         name: "Tên"
         email: "Email"
+        birthday: "Ngày sinh"
+        password: "Mật khẩu"
+        password_confirmation: "Xác nhận mật khẩu"

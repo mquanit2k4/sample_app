@@ -110,11 +110,21 @@ en:
         user:
           attributes:
             name:
-              blank: "Name cannot be blank"
+              blank: "cannot be blank"
+              too_long: "is too long (maximum is %{count} characters)"
             email:
-              blank: "Email cannot be blank"
-              taken: "Email has already been taken"
+              blank: "cannot be blank"
+              taken: "has already been taken"
+              invalid: "format is invalid"
+              taken: "has already been taken"
+            birthday:
+              blank: "cannot be blank"
+              too_old: "cannot be more than %{years} years ago"
+              future_date: "cannot be in the future"
     attributes:
       user:
         name: "Name"
         email: "Email"
+        birthday: "Birthday"
+        password: "Password"
+        password_confirmation: "Password confirmation"
