@@ -1,0 +1,30 @@
+{
+  "name": "rails_tutorial",
+  "version": "1.0.0",
+  "description": "# 1. Phiên bản cài đặt để chạy được dự án: - Ruby: 3.2.2 - Rails: 7.0.7 - MySQL",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mquanit2k4/sample_app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mquanit2k4/sample_app/issues"
+  },
+  "homepage": "https://github.com/mquanit2k4/sample_app#readme",
+  "devDependencies": {
+    "stylelint": "^16.21.1",
+    "stylelint-config-standard": "^38.0.0",
+    "stylelint-config-standard-scss": "^15.0.1",
+    "stylelint-order": "^7.0.0"
+  }
+}
