@@ -1,0 +1,31 @@
+en:
+  navigation:
+    home: "Home"
+    help: "Help"
+    contact: "Contact"
+    login: "Log in"
+    logout: "Log out"
+    signup: "Sign up"
+    sample_app: "Sample App"
+
+  common:
+    edit: "Edit"
+    show: "Show"
+    delete: "Delete"
+    confirm: "Are you sure?"
+    back: "Back"
+    submit: "Submit"
+    cancel: "Cancel"
+    save: "Save"
+    create: "Create"
+    update: "Update"
+
+  titles:
+    home: "Home"
+    help: "Help"
+    about: "About"
+    contact: "Contact"
+
+  locales:
+    en: "English"
+    vi: "Tiếng Việt"

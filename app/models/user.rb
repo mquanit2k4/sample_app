@@ -7,6 +7,9 @@ class User < ApplicationRecord
   MAX_LENGTH_NAME = 50
   MAX_LENGTH_EMAIL = 255
   MAX_AGE_YEARS = 100
+  GENDERS = %w(female male other).freeze
+  USER_PERMIT = %i(name email password password_confirmation birthday
+gender).freeze
 
   validates :name, presence: true, length: {maximum: MAX_LENGTH_NAME}
   validates :email, presence: true,
@@ -14,6 +17,7 @@ class User < ApplicationRecord
                   format: {with: VALID_EMAIL_REGEX},
                   uniqueness: {case_sensitive: false}
   validates :birthday, presence: true
+  validates :gender, presence: true, inclusion: {in: GENDERS}
   validate :birthday_within_range
 
   has_many :microposts, dependent: :destroy

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   scope "(:locale)", locale: /en|vi/ do
     root "microposts#index"  # Changed to show microposts on homepage
 
@@ -7,7 +8,10 @@ Rails.application.routes.draw do
     get "static_pages/home"
     get "static_pages/help"
     get "static_pages/contact"
+    get "signup", to: "users#new"
+    post "signup", to: "users#create"
 
+    resources :users, only: %i(new create show)
     resources :microposts, only: [:index]
   end
 end

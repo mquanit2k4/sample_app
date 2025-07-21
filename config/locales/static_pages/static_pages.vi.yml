@@ -1,0 +1,38 @@
+vi:
+  static_pages:
+    home:
+      title: "Ứng dụng mẫu Ruby on Rails Tutorial"
+      welcome: "Chào mừng đến với ứng dụng mẫu"
+      description: "Đây là trang chủ của ứng dụng mẫu Ruby on Rails Tutorial."
+    help:
+      title: "Trợ giúp"
+      content: "Nhận trợ giúp về Ruby on Rails Tutorial tại"
+      link_text: "phần trợ giúp Rails Tutorial"
+      content_additional: "và nếu muốn trợ giúp trợ giúp về ứng dụng mẫu này, hãy xem"
+      book_link_text: "sách Ruby on Rails Tutorial."
+    contact:
+      title: "Liên hệ"
+      heading: "Liên hệ với chúng tôi"
+      description: "Chúng tôi rất muốn nghe từ bạn! Hãy liên hệ với chúng tôi nếu có bất kỳ câu hỏi hoặc phản hồi nào."
+
+  contact:
+    title: "Liên hệ"
+    heading: "Liên hệ với chúng tôi"
+    get_in_touch: "Liên lạc"
+    description: "Chúng tôi rất muốn nghe từ bạn! Hãy liên hệ với chúng tôi nếu có bất kỳ câu hỏi hoặc phản hồi nào."
+    info:
+      title: "Thông tin liên hệ"
+      email: "Email"
+      phone: "Điện thoại"
+      address: "Địa chỉ"
+    form:
+      title: "Gửi tin nhắn cho chúng tôi"
+      name: "Họ tên"
+      name_placeholder: "Nhập họ tên của bạn"
+      email: "Email"
+      email_placeholder: "Nhập địa chỉ email"
+      subject: "Tiêu đề"
+      subject_placeholder: "Nhập tiêu đề"
+      message: "Tin nhắn"
+      message_placeholder: "Nhập tin nhắn của bạn"
+      send: "Gửi tin nhắn"

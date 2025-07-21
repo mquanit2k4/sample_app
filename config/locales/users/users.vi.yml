@@ -1,0 +1,27 @@
+vi:
+  users:
+    index:
+      user: "Người dùng"
+      name: "Tên"
+      email: "Email"
+      new_user: "Thêm người dùng"
+    show:
+      user_details: "Chi tiết người dùng"
+      edit_user: "Sửa người dùng"
+      delete_user: "Xóa người dùng"
+      not_found: "Không tìm thấy người dùng"
+    birthday_required: "Ngày sinh là bắt buộc để đăng ký"
+    gender_required: "Vui lòng chọn giới tính"
+    gender:
+      select: "Chọn giới tính"
+      female: "Nữ"
+      male: "Nam"
+      other: "Khác"
+
+  new_user:
+    sign_up: "Đăng ký"
+    create_my_account: "Tạo tài khoản"
+    create_success: "Người dùng đã được tạo thành công"
+    history:
+      created_at: "Được tạo vào:"
+      updated_at: "Cập nhật vào:"
