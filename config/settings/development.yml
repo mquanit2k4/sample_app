@@ -1,0 +1,5 @@
+default_page: 1
+default_page_items: 10
+
+time_format:
+  user_history: "%B %d, %Y at %I:%M %p"

@@ -1,7 +1,2 @@
 help_url: "http://www.railstutorial.org/help"
 book_url: "http://www.railstutorial.org/book"
-default_page: 1
-default_page_items: 10
-default: &default
-  time_format:
-    user_history: "%B %d, %Y at %I:%M %p"

@@ -105,6 +105,10 @@ textarea {
   }
 }
 
+.dropdown-menu.active {
+  display: block;
+}
+
 /* contact page styles */
 .contact-info {
   margin-bottom: 20px;
@@ -219,4 +223,3 @@ input {
     color: $state-danger-text;
   }
 }
-

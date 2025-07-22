@@ -7,6 +7,10 @@ en:
     logout: "Log out"
     signup: "Sign up"
     sample_app: "Sample App"
+    account: "Account"
+    profile: "Profile"
+    setting: "Settings"
+    users: "Users"
 
   common:
     edit: "Edit"
