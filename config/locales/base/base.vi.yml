@@ -1,0 +1,31 @@
+vi:
+  navigation:
+    home: "Trang chủ"
+    help: "Trợ giúp"
+    contact: "Liên hệ"
+    login: "Đăng nhập"
+    logout: "Đăng xuất"
+    signup: "Đăng ký"
+    sample_app: "Ứng dụng mẫu"
+
+  common:
+    edit: "Sửa"
+    show: "Xem"
+    delete: "Xóa"
+    confirm: "Bạn có chắc chắn?"
+    back: "Quay lại"
+    submit: "Gửi"
+    cancel: "Hủy"
+    save: "Lưu"
+    create: "Tạo"
+    update: "Cập nhật"
+
+  titles:
+    home: "Trang chủ"
+    help: "Trợ giúp"
+    about: "Về chúng tôi"
+    contact: "Liên hệ"
+
+  locales:
+    en: "English"
+    vi: "Tiếng Việt"

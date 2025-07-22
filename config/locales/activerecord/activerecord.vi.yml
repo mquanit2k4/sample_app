@@ -1,0 +1,34 @@
+vi:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "không được để trống"
+              too_long: "quá dài (tối đa %{count} ký tự)"
+            email:
+              blank: "không được để trống"
+              taken: "đã được sử dụng"
+              invalid: "có định dạng không hợp lệ"
+            birthday:
+              blank: "không được để trống"
+              too_old: "không được quá %{years} năm trước"
+              future_date: "không được trong tương lai"
+            gender:
+              blank: "không được để trống"
+              inclusion: "không hợp lệ"
+    attributes:
+      user:
+        name: "Tên"
+        email: "Email"
+        birthday: "Ngày sinh"
+        password: "Mật khẩu"
+        password_confirmation: "Xác nhận mật khẩu"
+        gender: "Giới tính"
+
+  error_messages:
+    the_form_contains: "Form chứa"
+    error:
+      one: "lỗi"
+      other: "lỗi"

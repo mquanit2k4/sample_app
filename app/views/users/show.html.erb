@@ -1,0 +1,24 @@
+<% provide :title, @user.name %>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.name %>
+      </h1>
+      <div class="user-timestamps mt-3">
+        <div class="user-timestamps mt-3">
+        <p>
+          <strong><%= t "new_user.history.updated_at" %></strong>
+          <%= @user.created_at.strftime(Settings.time_format.user_history) %>
+        </p>
+
+        <p>
+          <strong><%= t "new_user.history.created_at" %></strong>
+          <%= @user.updated_at.strftime(Settings.time_format.user_history) %>
+        </p>
+      </div>
+      </div>
+    </section>
+  </aside>
+</div>

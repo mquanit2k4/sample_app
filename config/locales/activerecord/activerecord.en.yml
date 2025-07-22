@@ -1,0 +1,34 @@
+en:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "cannot be blank"
+              too_long: "is too long (maximum is %{count} characters)"
+            email:
+              blank: "cannot be blank"
+              taken: "has already been taken"
+              invalid: "format is invalid"
+            birthday:
+              blank: "cannot be blank"
+              too_old: "cannot be more than %{years} years ago"
+              future_date: "cannot be in the future"
+            gender:
+              blank: "cannot be blank"
+              inclusion: "is not a valid option"
+    attributes:
+      user:
+        name: "Name"
+        email: "Email"
+        birthday: "Birthday"
+        password: "Password"
+        password_confirmation: "Password confirmation"
+        gender: "Gender"
+
+  error_messages:
+    the_form_contains: "The form contains"
+    error:
+      one: "error"
+      other: "errors"
