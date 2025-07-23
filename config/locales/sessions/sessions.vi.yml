@@ -1,0 +1,10 @@
+vi:
+  sessions:
+    new:
+      log_in: "Đăng nhập"
+      new_user?: "Người dùng mới?"
+      sign_up_now!: "Đăng ký ngay!"
+      pass_word: "Mật khẩu"
+      invalid_email_password_combination: "Sai email hoặc mật khẩu"
+    create:
+      login_success: "Đăng nhập thành công! Chào mừng trở lại!"

@@ -7,6 +7,10 @@ vi:
     logout: "Đăng xuất"
     signup: "Đăng ký"
     sample_app: "Ứng dụng mẫu"
+    account: "Tài khoản"
+    profile: "Hồ sơ"
+    setting: "Cài đặt"
+    users: "Người dùng"
 
   common:
     edit: "Sửa"
