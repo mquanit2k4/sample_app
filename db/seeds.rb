@@ -1,25 +1,27 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+User.create!(
+  name: "Vu Minh Quan",
+  email: "quanvm@gmail.com",
+  password: "123456",
+  password_confirmation: "123456",
+  birthday: 25.years.ago.to_date,
+  gender: :male.to_s,
+  admin: true
+)
 
-# Create sample users
-users = User.create!([
-  { name: "John Doe", email: "john@example.com" },
-  { name: "Jane Smith", email: "jane@example.com" },
-  { name: "Bob Johnson", email: "bob@example.com" }
-])
+30.times do |n|
+  name = Faker::Name.name
+  email = "example-#{n+1}@railstutorial.org"
+  password = "password"
+  gender = %i(male female other).sample
 
-# Create sample microposts
-users.each do |user|
-  5.times do |i|
-    user.microposts.create!(
-      content: "This is micropost #{i + 1} from #{user.name}. Lorem ipsum dolor sit amet!"
-    )
-  end
+  User.create!(
+    name: name,
+    email: email,
+    password: password,
+    password_confirmation: password,
+    birthday: Faker::Date.birthday(min_age: 16, max_age: 85),
+    gender: gender.to_s
+  )
 end
 
-puts "Created #{User.count} users and #{Micropost.count} microposts."
+puts "Created #{User.count} users successfully!"

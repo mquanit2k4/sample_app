@@ -5,11 +5,19 @@ vi:
       name: "Tên"
       email: "Email"
       new_user: "Thêm người dùng"
+      all_user: "Tất cả người dùng"
+    user:
+      delete: "Xóa"
+      you_sure: "Bạn có chắc chắn không?"
     show:
       user_details: "Chi tiết người dùng"
       edit_user: "Sửa người dùng"
       delete_user: "Xóa người dùng"
       not_found: "Không tìm thấy người dùng"
+    update:
+      update_user: "Cập nhật người dùng"
+      update_success: "Người dùng đã được cập nhật thành công"
+      delete_success: "Người dùng đã được xóa thành công"
     birthday_required: "Ngày sinh là bắt buộc để đăng ký"
     gender_required: "Vui lòng chọn giới tính"
     gender:
@@ -17,11 +25,29 @@ vi:
       female: "Nữ"
       male: "Nam"
       other: "Khác"
-
-  new_user:
-    sign_up: "Đăng ký"
-    create_my_account: "Tạo tài khoản"
-    create_success: "Người dùng đã được tạo thành công"
-    history:
-      created_at: "Được tạo vào:"
-      updated_at: "Cập nhật vào:"
+    new:
+      sign_up: "Đăng ký"
+      create_my_account: "Tạo tài khoản"
+      create_success: "Người dùng đã được tạo thành công"
+      history:
+        created_at: "Được tạo vào:"
+        updated_at: "Cập nhật vào:"
+    edit:
+      edit_user: "Sửa người dùng"
+      update_profile: "Cập nhật hồ sơ của bạn"
+      password_confirmation: "Xác nhận mật khẩu"
+      save_change: "Lưu thay đổi"
+      change: "Thay đổi"
+    destroy:
+      user_deleted: "Người dùng đã được xóa thành công"
+      delete_failed: "Xóa người dùng không thành công"
+    create:
+      create_success: "Người dùng đã được tạo thành công"
+    load_user:
+      user_not_found: "Không tìm thấy người dùng"
+    logged_in_user:
+      please_login: "Vui lòng đăng nhập để tiếp tục"
+    correct_user:
+      cannot_edit: "Bạn không thể chỉnh sửa người dùng này"
+    admin_user:
+      not_admin: "Bạn không có quyền thực hiện hành động này"

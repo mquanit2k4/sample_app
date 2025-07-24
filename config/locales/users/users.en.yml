@@ -5,11 +5,19 @@ en:
       name: "Name"
       email: "Email"
       new_user: "New User"
+      all_user: "All Users"
+    user:
+      delete: "Delete"
+      you_sure: "Are you sure?"
     show:
       user_details: "User Details"
       edit_user: "Edit User"
       delete_user: "Delete User"
       not_found: "User not found"
+    update:
+      update_user: "Update User"
+      update_success: "User updated successfully"
+      delete_success: "User deleted successfully"
     birthday_required: "Birthday is required for registration"
     gender_required: "Please select your gender"
     gender:
@@ -17,11 +25,29 @@ en:
       female: "Female"
       male: "Male"
       other: "Other"
-
-  new_user:
-    sign_up: "Sign up"
-    create_my_account: "Create my account"
-    create_success: "User created successful"
-    history:
-      created_at: "Member since:"
-      updated_at: "Last updated:"
+    new:
+      sign_up: "Sign up"
+      create_my_account: "Create my account"
+      create_success: "User created successful"
+      history:
+        created_at: "Member since:"
+        updated_at: "Last updated:"
+    edit:
+      edit_user: "Edit User"
+      update_profile: "Update your profile"
+      password_confirmation: "Password confirmation"
+      save_change: "Save changes"
+      change: "Change"
+    destroy:
+      user_deleted: "User deleted successfully"
+      delete_failed: "Failed to delete user"
+    create:
+      create_success: "User created successfully"
+    load_user:
+      user_not_found: "User not found"
+    logged_in_user:
+      please_login: "Please log in to continue"
+    correct_user:
+      cannot_edit: "You cannot edit this user"
+    admin_user:
+      not_admin: "You are not authorized to perform this action"
