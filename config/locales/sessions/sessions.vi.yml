@@ -5,6 +5,7 @@ vi:
       new_user?: "Người dùng mới?"
       sign_up_now!: "Đăng ký ngay!"
       pass_word: "Mật khẩu"
-      invalid_email_password_combination: "Sai email hoặc mật khẩu"
+      remember_me: "Ghi nhớ tôi trên máy tính này"
     create:
       login_success: "Đăng nhập thành công! Chào mừng trở lại!"
+    invalid_email_password_combination: "Sai email hoặc mật khẩu"

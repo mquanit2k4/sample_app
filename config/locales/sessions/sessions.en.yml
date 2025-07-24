@@ -5,6 +5,7 @@ en:
       new_user?: "New user?"
       sign_up_now!: "Sign up now!"
       pass_word: "Password"
-      invalid_email_password_combination: "Invalid email/password combination"
+      remember_me: "Remember me on this computer"
     create:
       login_success: "Login successful! Welcome back!"
+    invalid_email_password_combination: "Invalid email/password combination"
