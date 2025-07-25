@@ -8,4 +8,7 @@ vi:
       remember_me: "Ghi nhớ tôi trên máy tính này"
     create:
       login_success: "Đăng nhập thành công! Chào mừng trở lại!"
+      account_not_activated: "Tài khoản chưa được kích hoạt. Vui lòng kiểm tra email của bạn để nhận liên kết kích hoạt."
     invalid_email_password_combination: "Sai email hoặc mật khẩu"
+    load_user_by_email:
+      user_not_found: "Không tìm thấy người dùng. Vui lòng kiểm tra email bạn đã nhập."

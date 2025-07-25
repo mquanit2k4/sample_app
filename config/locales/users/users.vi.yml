@@ -38,11 +38,14 @@ vi:
       password_confirmation: "Xác nhận mật khẩu"
       save_change: "Lưu thay đổi"
       change: "Thay đổi"
+      please_login: "Vui lòng đăng nhập để tiếp tục"
+      cannot_edit: "Bạn không thể chỉnh sửa người dùng này"
     destroy:
       user_deleted: "Người dùng đã được xóa thành công"
       delete_failed: "Xóa người dùng không thành công"
     create:
       create_success: "Người dùng đã được tạo thành công"
+      check_email_activation: "Vui lòng kiểm tra email của bạn để kích hoạt tài khoản"
     load_user:
       user_not_found: "Không tìm thấy người dùng"
     logged_in_user:

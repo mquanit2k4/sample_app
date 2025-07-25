@@ -16,6 +16,6 @@ Rails.application.routes.draw do
     post "signup", to: "users#create"
 
     resources :users
-    resources :microposts, only: [:index]
+    resources :account_activations, only: :edit
   end
 end

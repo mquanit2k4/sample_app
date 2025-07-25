@@ -8,4 +8,7 @@ en:
       remember_me: "Remember me on this computer"
     create:
       login_success: "Login successful! Welcome back!"
+      account_not_activated: "Account not activated. Please check your email for the activation link."
     invalid_email_password_combination: "Invalid email/password combination"
+    load_user_by_email:
+      user_not_found: "User not found. Please check the email you entered."
