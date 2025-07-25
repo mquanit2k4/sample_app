@@ -7,9 +7,12 @@ class User < ApplicationRecord
   MAX_LENGTH_NAME = 50
   MAX_LENGTH_EMAIL = 255
   MAX_AGE_YEARS = 100
+  PASSWORD_MIN_LENGTH = 6
   GENDERS = %w(female male other).freeze
   USER_PERMIT = %i(name email password password_confirmation birthday
 gender).freeze
+
+  scope :recent, -> {order(created_at: :desc)}
 
   validates :name, presence: true, length: {maximum: MAX_LENGTH_NAME}
   validates :email, presence: true,
@@ -18,6 +21,8 @@ gender).freeze
                   uniqueness: {case_sensitive: false}
   validates :birthday, presence: true
   validates :gender, presence: true, inclusion: {in: GENDERS}
+  validates :password, presence: true,
+                  length: {minimum: PASSWORD_MIN_LENGTH}, allow_nil: true
   validate :birthday_within_range
 
   has_many :microposts, dependent: :destroy

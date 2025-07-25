@@ -51,3 +51,7 @@ group :test do
 end
 
 gem "config"
+
+gem "faker", "2.21.0"
+
+gem "pagy"

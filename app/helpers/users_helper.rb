@@ -1,7 +1,10 @@
 module UsersHelper
-  def gravatar_for user
+  DEFAULT_AVATAR_SIZE = 80
+
+  def gravatar_for user, options = {size: DEFAULT_AVATAR_SIZE}
     gravatar_id = Digest::MD5.hexdigest user.email.downcase
-    gravatar_url = "https://www.gravatar.com/avatar/#{gravatar_id}?d=identicon&s=80"
+    size = options[:size]
+    gravatar_url = "https://secure.gravatar.com/avatar/#{gravatar_id}?s=#{size}"
     image_tag gravatar_url, alt: user.name, class: "gravatar"
   end
 
@@ -14,5 +17,9 @@ module UsersHelper
       ],
       selected
     )
+  end
+
+  def delete_user? user_delete
+    current_user&.admin? && !current_user?(user_delete)
   end
 end
