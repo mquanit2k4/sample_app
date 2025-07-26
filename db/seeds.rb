@@ -5,7 +5,9 @@ User.create!(
   password_confirmation: "123456",
   birthday: 25.years.ago.to_date,
   gender: :male.to_s,
-  admin: true
+  admin: true,
+  activated: true,
+  activated_at: Time.zone.now
 )
 
 30.times do |n|
@@ -20,7 +22,9 @@ User.create!(
     password: password,
     password_confirmation: password,
     birthday: Faker::Date.birthday(min_age: 16, max_age: 85),
-    gender: gender.to_s
+    gender: gender.to_s,
+    activated: true,
+    activated_at: Time.zone.now
   )
 end
 

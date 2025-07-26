@@ -38,11 +38,14 @@ en:
       password_confirmation: "Password confirmation"
       save_change: "Save changes"
       change: "Change"
+      please_login: "Please log in to continue"
+      cannot_edit: "You cannot edit this user"
     destroy:
       user_deleted: "User deleted successfully"
       delete_failed: "Failed to delete user"
     create:
       create_success: "User created successfully"
+      check_email_activation: "Please check your email to activate your account"
     load_user:
       user_not_found: "User not found"
     logged_in_user:

@@ -1,0 +1,4 @@
+en:
+  account_activatiosn:
+    account_activated: "Tài khoản đã được kích hoạt"
+    invalid_activation_link: "Liên kết kích hoạt không hợp lệ"
