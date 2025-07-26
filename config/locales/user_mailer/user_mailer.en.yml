@@ -9,3 +9,7 @@ en:
       regard_message: "Regards, Sample App"
     password_reset:
       subject: "Password reset"
+      intro: "To reset your password click the link below:"
+      reset_password: "Reset my password"
+      expiration_time: "This link will expire in 2 hours."
+      discard: "If you did not request your password to be reset, please ignore this email and your password will stayas it is."

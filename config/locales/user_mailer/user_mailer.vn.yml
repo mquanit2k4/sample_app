@@ -9,3 +9,7 @@ vi:
       regard_message: "Trân trọng, Sample App"
     password_reset:
       subject: "Đặt lại mật khẩu"
+      intro: "Để đặt lại mật khẩu của bạn, hãy nhấp vào liên kết bên dưới:"
+      reset_password: "Đặt lại mật khẩu của tôi"
+      expiration_time: "Liên kết này sẽ hết hạn trong 2 giờ."
+      discard: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ giữ nguyên như cũ."
