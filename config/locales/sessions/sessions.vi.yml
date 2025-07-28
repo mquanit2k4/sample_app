@@ -6,6 +6,7 @@ vi:
       sign_up_now!: "Đăng ký ngay!"
       pass_word: "Mật khẩu"
       remember_me: "Ghi nhớ tôi trên máy tính này"
+      forgot_password: "Quên mật khẩu?"
     create:
       login_success: "Đăng nhập thành công! Chào mừng trở lại!"
       account_not_activated: "Tài khoản chưa được kích hoạt. Vui lòng kiểm tra email của bạn để nhận liên kết kích hoạt."

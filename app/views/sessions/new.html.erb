@@ -12,6 +12,7 @@
 
       <div class="form-group">
         <%= f.label :password, t(".pass_word") %>
+        <%= link_to t(".forgot_password"), new_password_reset_path %>
         <%= f.password_field :password, class: "form-control" %>
       </div>
 
