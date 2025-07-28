@@ -1,0 +1,11 @@
+vi:
+  user_mailer:
+    account_activation:
+      subject: "Kích hoạt tài khoản"
+      greeting: "Chào %{user_name}"
+      message: "Chào mừng bạn đến với Ứng dụng Mẫu! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
+      active_link_text: "Kích hoạt tài khoản của tôi"
+      discard_message: "Nếu bạn không yêu cầu điều này, vui lòng bỏ qua email này."
+      regard_message: "Trân trọng, Sample App"
+    password_reset:
+      subject: "Đặt lại mật khẩu"

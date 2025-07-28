@@ -38,6 +38,7 @@ module SessionsHelper
     user.remember
     cookies.permanent.signed[:user_id] = user.id
     cookies.permanent[:remember_token] = user.remember_token
+    session[:remember_token] = user.remember_token
   end
 
   def remember_session user
@@ -45,24 +46,24 @@ module SessionsHelper
     session[:remember_token] = user.remember_token
   end
 
+  def store_location
+    session[:forwarding_url] = request.original_url if request.get?
+  end
+
   private
 
   def find_user_by_session user_id
     user = User.find_by(id: user_id)
-    return unless user&.authenticated?(session[:remember_token])
+    return unless user&.authenticated?(:remember, session[:remember_token])
 
     user
   end
 
   def find_user_by_cookie user_id
     user = User.find_by(id: user_id)
-    return unless user&.authenticated?(cookies[:remember_token])
+    return unless user&.authenticated?(:remember, cookies[:remember_token])
 
     log_in user
     user
-  end
-
-  def store_location
-    session[:forwarding_url] = request.original_url if request.get?
   end
 end

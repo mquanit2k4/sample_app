@@ -3,3 +3,5 @@ default_page_items: 10
 
 time_format:
   user_history: "%B %d, %Y at %I:%M %p"
+
+default_send_email: "noreply@example.com"
