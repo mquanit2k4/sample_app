@@ -18,6 +18,14 @@ en:
             gender:
               blank: "cannot be blank"
               inclusion: "is not a valid option"
+        micropost:
+          attributes:
+            content:
+              blank: "cannot be blank"
+              too_long: "is too long (maximum is %{count} characters)"
+            image:
+              format_invalid: "must be a JPEG, GIF, or PNG image"
+              too_large: "must be less than 5MB"
     attributes:
       user:
         name: "Name"

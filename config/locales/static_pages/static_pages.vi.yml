@@ -4,6 +4,7 @@ vi:
       title: "Ứng dụng mẫu Ruby on Rails Tutorial"
       welcome: "Chào mừng đến với ứng dụng mẫu"
       description: "Đây là trang chủ của ứng dụng mẫu Ruby on Rails Tutorial."
+      micropost_feed: "Dòng thời gian Micropost"
     help:
       title: "Trợ giúp"
       content: "Nhận trợ giúp về Ruby on Rails Tutorial tại"

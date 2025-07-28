@@ -1,0 +1,4 @@
+translations:
+  - file: "app/javascripts/custom/translation.js"
+    only:
+      - "*.microposts.image_size_alert"

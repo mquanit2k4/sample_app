@@ -30,6 +30,9 @@ en:
     about: "About"
     contact: "Contact"
 
+  microposts:
+    image_size_alert: "Maximum file size is %{max_size}MB. Please choose a smaller file."
+
   locales:
     en: "English"
     vi: "Tiếng Việt"
