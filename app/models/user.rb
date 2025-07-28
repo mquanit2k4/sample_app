@@ -9,8 +9,10 @@ class User < ApplicationRecord
   GENDERS = %w(female male other).freeze
   USER_PERMIT = %i(name email password password_confirmation birthday
 gender).freeze
+  PASSWORD_RESET_PERMIT = %i(password).freeze
+  PASSWORD_RESET_EXPIRATION_TIME = 2.hours
 
-  attr_accessor :remember_token, :activation_token
+  attr_accessor :remember_token, :activation_token, :reset_token
 
   before_save :downcase_email
   before_create :create_activation_digest
@@ -53,6 +55,16 @@ gender).freeze
     update_columns activated: true, activated_at: Time.zone.now
   end
 
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update_columns reset_digest: User.digest(reset_token),
+                   reset_sent_at: Time.zone.now
+  end
+
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
+  end
+
   def remember
     self.remember_token = User.new_token
     update_column :remember_digest, User.digest(remember_token)
@@ -71,6 +83,10 @@ gender).freeze
 
   def forget
     update_column :remember_digest, nil
+  end
+
+  def password_reset_expired?
+    reset_sent_at < PASSWORD_RESET_EXPIRATION_TIME.ago
   end
 
   private
