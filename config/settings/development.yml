@@ -1,7 +1,15 @@
 default_page: 1
 default_page_items: 10
+digit_50: 50
 
 time_format:
   user_history: "%B %d, %Y at %I:%M %p"
+
+upload:
+  image_accept: "image/jpeg,image/gif,image/png"
+  image_content_types:
+    - image/jpeg
+    - image/gif
+    - image/png
 
 default_send_email: "noreply@example.com"

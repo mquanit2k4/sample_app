@@ -14,6 +14,11 @@ vi:
       edit_user: "Sửa người dùng"
       delete_user: "Xóa người dùng"
       not_found: "Không tìm thấy người dùng"
+      microposts: "Microposts"
+      no_microposts: "Chưa có micropost nào"
+      view_profile: "Xem hồ sơ của tôi"
+      delete_micropost: "Xóa"
+      you_sure_delete: "Bạn có chắc chắn muốn xóa micropost này?"
     update:
       update_user: "Cập nhật người dùng"
       update_success: "Người dùng đã được cập nhật thành công"

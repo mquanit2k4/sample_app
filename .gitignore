@@ -51,3 +51,6 @@ yarn-error.log*
 
 # Environment variables
 .env
+
+# Ignore uploaded test images
+/storage

@@ -4,6 +4,7 @@ en:
       title: "Ruby on Rails Tutorial Sample App"
       welcome: "Welcome to Sample App"
       description: "This is the home page for the Ruby on Rails Tutorial sample application."
+      micropost_feed: "Micropost Feed"
     help:
       title: "Help"
       content: "Get help on the Ruby on Rails Tutorial at the"

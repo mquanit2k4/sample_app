@@ -35,11 +35,25 @@ aside {
       margin-top: 0px;
     }
   }
+
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span.picture {
+  margin-top: 10px;
+
+  input {
+    border: 0;
+  }
 }
 
 .gravatar {
   float: left;
   margin-right: 10px;
+  margin-top: 5px;
 }
 
 .gravatar_edit {
@@ -193,12 +207,39 @@ textarea {
 /* Users index */
 .users {
   list-style: none;
-  margin: 0;
+  margin-top: 5em;
+  padding-top: 0;
 
   li {
     border-bottom: 1px solid $gray-lighter;
     overflow: auto;
     padding: 10px 0;
+  }
+}
+
+.microposts {
+  list-style: none;
+  padding: 0;
+
+  li {
+    border-top: 1px solid #e8e8e8;
+    padding: 10px 0;
+  }
+
+  .content {
+    display: block;
+    margin-left: 60px;
+
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
   }
 }
 

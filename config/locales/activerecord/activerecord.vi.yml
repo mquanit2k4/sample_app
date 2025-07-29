@@ -18,6 +18,14 @@ vi:
             gender:
               blank: "không được để trống"
               inclusion: "không hợp lệ"
+        micropost:
+          attributes:
+            content:
+              blank: "không được để trống"
+              too_long: "quá dài (tối đa %{count} ký tự)"
+            image:
+              format_invalid: "phải là hình ảnh JPEG, GIF hoặc PNG"
+              too_large: "phải nhỏ hơn 5MB"
     attributes:
       user:
         name: "Tên"

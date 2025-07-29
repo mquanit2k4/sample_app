@@ -18,3 +18,15 @@ en:
     confirm_delete: "Are you sure you want to delete this micropost?"
     created_successfully: "Micropost was successfully created."
     deleted_successfully: "Micropost was successfully deleted."
+    timestamp: "Posted %{time} ago."
+    micropost: "micropost"
+    post: "Post"
+    content_placeholder: "Compose new micropost..."
+    create:
+      create_error: "Error creating micropost. Please try again."
+      create_success: "Micropost created successfully!"
+    destroy:
+      deleted_success: "Micropost deleted successfully."
+      deleted_fail: "Failed to delete micropost. Please try again."
+    correct_user_post:
+      micropost_invalid: "Invalid micropost. You cannot delete this micropost."
