@@ -19,6 +19,8 @@ en:
       view_profile: "View my profile"
       delete_micropost: "Delete"
       you_sure_delete: "Are you sure you want to delete this micropost?"
+      follow: "Follow"
+      unfollow: "Unfollow"
     update:
       update_user: "Update User"
       update_success: "User updated successfully"
@@ -59,3 +61,16 @@ en:
       cannot_edit: "You cannot edit this user"
     admin_user:
       not_admin: "You are not authorized to perform this action"
+    following:
+      following: "Following"
+      followers: "Followers"
+      no_following: "You are not following anyone yet"
+      no_followers: "No followers yet"
+    followers:
+      following: "Following"
+      followers: "Followers"
+      no_following: "You are not following anyone yet"
+      no_followers: "No followers yet"
+    show_follow:
+      view_my_profile: "View my profile"
+      micropost: "Microposts:"

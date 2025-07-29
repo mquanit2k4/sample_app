@@ -1,0 +1,6 @@
+vi:
+  relationships:
+    load_user:
+      user_not_found: "Không tìm thấy người dùng"
+    load_relationship:
+      relationship_not_found: "Không tìm thấy mối quan hệ"

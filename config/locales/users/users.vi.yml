@@ -19,6 +19,8 @@ vi:
       view_profile: "Xem hồ sơ của tôi"
       delete_micropost: "Xóa"
       you_sure_delete: "Bạn có chắc chắn muốn xóa micropost này?"
+      follow: "Theo dõi"
+      unfollow: "Bỏ theo dõi"
     update:
       update_user: "Cập nhật người dùng"
       update_success: "Người dùng đã được cập nhật thành công"
@@ -59,3 +61,16 @@ vi:
       cannot_edit: "Bạn không thể chỉnh sửa người dùng này"
     admin_user:
       not_admin: "Bạn không có quyền thực hiện hành động này"
+    following:
+      following: "Đang theo dõi"
+      followers: "Người theo dõi"
+      no_following: "Bạn chưa theo dõi ai"
+      no_followers: "Chưa có người theo dõi"
+    followers:
+      following: "Đang theo dõi"
+      followers: "Người theo dõi"
+      no_following: "Bạn chưa theo dõi ai"
+      no_followers: "Chưa có người theo dõi"
+    show_follow:
+      view_my_profile: "Xem hồ sơ của tôi"
+      micropost: "Microposts:"
