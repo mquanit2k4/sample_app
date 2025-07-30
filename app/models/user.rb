@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   has_secure_password
 
+  DEFAULT_INCLUDES_FEED = [:user, {image_attachment: :blob}].freeze
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   MAX_LENGTH_NAME = 50
   MAX_LENGTH_EMAIL = 255
@@ -15,6 +16,14 @@ gender).freeze
   attr_accessor :remember_token, :activation_token, :reset_token
 
   has_many :microposts, dependent: :destroy
+  has_many :active_relationships, class_name: Relationship.name,
+                                foreign_key: :follower_id,
+                                dependent: :destroy
+  has_many :passive_relationships, class_name: Relationship.name,
+                                  foreign_key: :followed_id,
+                                  dependent: :destroy
+  has_many :following, through: :active_relationships, source: :followed
+  has_many :followers, through: :passive_relationships, source: :follower
 
   before_save :downcase_email
   before_create :create_activation_digest
@@ -64,7 +73,8 @@ gender).freeze
   end
 
   def feed
-    microposts.order(created_at: :desc)
+    Micropost.relate_post(following_ids << id)
+             .includes(DEFAULT_INCLUDES_FEED).newest
   end
 
   def send_password_reset_email
@@ -93,6 +103,18 @@ gender).freeze
 
   def password_reset_expired?
     reset_sent_at < PASSWORD_RESET_EXPIRATION_TIME.ago
+  end
+
+  def follow other_user
+    following << other_user
+  end
+
+  def unfollow other_user
+    following.delete other_user
+  end
+
+  def following? other_user
+    following.include? other_user
   end
 
   private

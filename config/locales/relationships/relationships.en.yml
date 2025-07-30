@@ -1,0 +1,6 @@
+en:
+  relationships:
+    load_user:
+      user_not_found: "User not found"
+    load_relationship:
+      relationship_not_found: "Relationship not found"

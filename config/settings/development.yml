@@ -1,6 +1,7 @@
 default_page: 1
 default_page_items: 10
 digit_50: 50
+digit_30: 30
 
 time_format:
   user_history: "%B %d, %Y at %I:%M %p"
